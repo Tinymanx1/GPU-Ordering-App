@@ -1,0 +1,59 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <img class="banner" src="img/Banner.png">
+            <div id="menu" class="menu">
+                <!-- menu goes here! -->
+            </div>
+            <div id="cart" class="cart hidden">
+                <h1>Your Order</h1>
+                <div id="cart-list" class="cart-list">
+                    <!-- cart goes here! -->
+                </div>
+                <div class="line"></div>
+                <div class="total-price">
+                    <h2>Total price:</h2>
+                    <h2 id="display-total"></h2>
+                </div>
+                <button id="order-btn" class="order-btn">Complete Order</button>
+            </div>
+            <div id="payment-modal" class="payment-modal hidden">
+                <h1>Enter card details</h1>
+                <form class="modal-flex" id="payment-modal">
+                    <input 
+                        class="modal-inputs" 
+                        id="name-input" 
+                        type="text" 
+                        placeholder="Enter your name" 
+                        required>
+                    <input 
+                        class="modal-inputs" 
+                        type="number" 
+                        placeholder="Enter card number" 
+                        required>
+                    <input 
+                        class="modal-inputs" 
+                        type="number" 
+                        placeholder="Enter CVV" 
+                        required>
+                    <button 
+                        type="submit" 
+                        id="pay-btn" 
+                        class="pay-btn">
+                        Pay
+                    </button>
+                </form>
+            </div>
+            <div id="thanks-msg" class="thanks-msg hidden">
+            </div>
+        </div>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+

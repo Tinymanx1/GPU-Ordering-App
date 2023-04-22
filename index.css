@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    background: linear-gradient(0.45turn, #666364, #27272b);
+} 
+
+/* typography */
+
+h2 {
+    margin: 0;
+}
+
+span {
+    font-weight: 700;
+}
+
+p {
+    color: #8B8B8B 
+}
+
+.cart-inner span {
+    font-size: 20px;
+}
+/* layout */
+
+.wrapper {
+    border: 2px solid lightgray;
+    border-radius: 8px;
+    width: 650px;
+    display: block;
+    margin: 50px auto 200px;
+    background-color: white;
+}
+
+.banner {
+    margin: 0;
+    width: 650px;
+    height: 250px;
+}
+
+.menu {
+    width: 650px;
+    margin: 0;
+    background-color: white;
+}
+
+.menu-item {
+    width: 550px;
+    margin: auto;
+    padding: 50px 0px;
+    border-bottom: 1px gray solid;
+}
+
+.menu-details-cont {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 170px;
+    max-width: 300px;
+}
+
+.menu-inner {
+    position: relative;
+}
+
+.menu-inner img {
+    width: 150px;
+    position: absolute;
+    max-height: 130px;
+}
+
+.cart {
+    text-align: center;
+}
+
+
+.cart-inner,
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.cart-inner {
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    padding: 10px 0;
+}
+
+.price {
+    padding: 10px 0;
+}
+
+.payment-modal {
+    position: fixed;
+    bottom: 0px;
+    width: 550px;
+    height: 450px;
+    background-color: #FFFFFF;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 100px gray;
+}
+
+.modal-flex {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.modal-flex input {
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    padding-left: 20px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.thanks-msg {
+    text-align: center;
+    margin: 40px auto;
+    padding: 40px 50px;
+    width: 400px;
+    background-color: #ECFDF5;
+    border: 2px solid #16DB99;
+}
+
+/* buttons */
+
+.menu-btn {
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    padding-top: 2px;
+    cursor: pointer;
+    position: absolute;
+    left: 500px;
+    transition: .2s;
+}
+
+.menu-btn:hover,
+.menu-btn:active {
+    border: 1.5px solid #16DB99;
+    transition: .2s;
+}
+
+.order-btn {
+    margin: 20px auto;
+    padding: 15px 120px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #16DB99;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.remove-btn {
+    margin-top: 4px;
+    margin-left: 10px;
+    color: #8B8B8B;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.remove-btn:hover,
+.remove-btn:active {
+    color: #16DB99;
+}
+
+.pay-btn {
+    cursor: pointer;
+    margin: 10px auto 15px;
+    padding: 15px 200px;
+    background-color: #16DB99;
+    border: none;
+    color: white;
+    transition: .1s;
+}
+
+.pay-btn:hover,
+.pay-btn:active {
+    transform: scale(1.05);
+    transition: .1s;
+}
+
+/* utility */
+
+.line {
+    margin: 20px auto;
+    border-bottom: 2px #393333 solid;
+    width: 550px;
+}
+
+.hidden {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
